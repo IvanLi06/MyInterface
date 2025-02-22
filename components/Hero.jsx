@@ -6,12 +6,11 @@ const Hero = () => (
   <div className="hero my-5 text-center" data-testid="hero">
     <Logo testId="hero-logo" />
     <h1 className="mb-4" data-testid="hero-title">
-      Next.js Sample Project
+      MyInterface
     </h1>
 
     <p className="lead" data-testid="hero-lead">
-      This is a sample application that demonstrates an authentication flow for a Regular Web App, using{' '}
-      <a href="https://nextjs.org">Next.js</a>
+      An AI-driven tool ensures industry-standard UI/UX formatting and SEO, allowing you to focus on what truly matters - YOUR CONTENT.
     </p>
   </div>
 );
