@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #000000;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'IBM Plex Mono';
+  margin:0;
+  box-sizing: border-box;
+  width:100%
+}
+body *{
+  margin:0;
+  box-sizing: border-box;
+}
+
+/* Custom animation for the dots */
+@keyframes dot-blink {
+  0%{
+    content: "";
+  }
+  20% {
+    content: ".";
+  }
+  33% {
+    content: "..";
+  }
+  66% {
+    content: "...";
+  }
+  100% {
+    content: "";
+  }
+}
+
+.animate-dots::after {
+  content: ".";
+  animation: dot-blink 1s infinite step-start;
+}
+
